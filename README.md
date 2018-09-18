@@ -1,16 +1,6 @@
 # angular-chart.js
 
-[![Bower version](https://badge.fury.io/bo/angular-chart.js.svg)](http://badge.fury.io/bo/angular-chart.js)
-[![npm version](https://badge.fury.io/js/angular-chart.js.svg)](http://badge.fury.io/js/angular-chart.js)
-[![Build Status](https://travis-ci.org/jtblin/angular-chart.js.svg?branch=master)](https://travis-ci.org/jtblin/angular-chart.js)
-[![Codacy Badge](https://api.codacy.com/project/badge/grade/6aa5ba92f4984a24874e5976ee541623)](https://www.codacy.com/app/jtblin/angular-chart-js)
-[![Code Coverage](https://d3s6mut3hikguw.cloudfront.net/github/jtblin/angular-chart.js/badges/coverage.svg)](https://codeclimate.com/github/jtblin/angular-chart.js)
-[![npm](https://img.shields.io/npm/dm/angular-chart.js.svg?maxAge=2592000)](https://www.npmjs.com/package/angular-chart.js)
-
-Beautiful, reactive, responsive charts for Angular.JS using [Chart.js](http://www.chartjs.org/). 
-
-Have a look at the [demo site](http://jtblin.github.io/angular-chart.js/) to see examples with detailed markup, 
-script and options.
+Little adaptation of angular-chart.js wrapper [angular-chart.js](http://jtblin.github.io/angular-chart.js/) to reference chart-lb.js. 
 
 # Installation
 
@@ -30,59 +20,15 @@ but must be set via standard options e.g. `ChartJsProvider.setOptions({ responsi
 
 ### npm
 
-    npm install --save angular-chart.js
+    npm install --save angular-chart-lb.js
 
 ### cdn
 
-    //cdn.jsdelivr.net/angular.chartjs/latest/angular-chart.min.js
+    //cdn.jsdelivr.net/angular.chartjs/latest/angular-chart.min-lb.js
 
 ### bower
 
-    bower install --save angular-chart.js
-
-### manually
-
-or copy the files from `dist/`. 
-
-Then add the sources to your code (adjust paths as needed) after 
-adding the dependencies for Angular and Chart.js first:
-
-```html
-<head>
-  ...
-<head>
-<body>
-  ...
-</body>
-  <script src="node_modules/angular/angular.min.js"></script>
-  <script src="node_modules/chart.js/Chart.min.js"></script>
-  <script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
-```
-
-# Utilisation
-
-There are 8 types of charts so 8 directives: `chart-line`, `chart-bar`, `chart-horizontal-bar`, `chart-radar`, 
-`chart-pie`, `chart-polar-area`, `chart-doughnut`, `chart-bubble`.
-
-Here are the options for all directives:
-
-- `chart-data`: series data
-- `chart-labels`: x axis labels (line, bar, horizontal bar, radar, bubble) or series labels (pie, doughnut, polar area)
-- `chart-options`: chart options (as from [Chart.js documentation](http://www.chartjs.org/docs/))
-- `chart-series`: (default: `[]`): series labels (line, bar, radar)
-- `chart-colors`: data colors (will use default colors if not specified)
-- `chart-get-color`: function that returns a color in case there are not enough (will use random colors if not specified)
-- `chart-click`: onclick event handler
-- `chart-hover`: onmousemove event handler
-- `chart-dataset-override`: override individual datasets to allow per dataset configuration e.g. y-axis, mixed type chart
-
-There is another directive `chart-base` that takes an extra attribute `chart-type` to define the type
-dynamically. 
-
-You can create mixed type chart using the `chart-dataset-override`, see 
-[bar-line example](http://jtblin.github.io/angular-chart.js/examples/dataset-override.html).
-
-See also [stacked bar example](http://jtblin.github.io/angular-chart.js/examples/stacked-bars.html).
+    bower install --save angular-chart-lb.js
 
 # Example
 
@@ -274,11 +220,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Thank you to the [contributors](https://github.com/jtblin/angular-chart.js/graphs/contributors)!
 
-# Author
-
-Jerome Touffe-Blin, [@jtblin](https://twitter.com/jtblin), [About me](http://about.me/jtblin)
-
 # License
 
-angular-chart.js is copyright 2016 Jerome Touffe-Blin and contributors. 
 It is licensed under the BSD license. See the include LICENSE file for details.
