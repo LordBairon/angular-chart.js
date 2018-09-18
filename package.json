@@ -1,6 +1,6 @@
 {
   "name": "angular-chart-lb.js",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Update Rerence chart library of angular.js wrapper for Chart-lb.js",
   "main": "dist/angular-chart.js",
   "directories": {
