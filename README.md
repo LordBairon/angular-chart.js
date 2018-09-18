@@ -1,4 +1,4 @@
-# angular-chart.js
+# angular-chart-lb.js
 
 Little adaptation of angular-chart.js wrapper [angular-chart.js](http://jtblin.github.io/angular-chart.js/) to reference chart-lb.js. 
 
