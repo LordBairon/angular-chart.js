@@ -13,7 +13,7 @@
     // Node/CommonJS
     module.exports = factory(
       typeof angular !== 'undefined' ? angular : require('angular'),
-      typeof Chart !== 'undefined' ? Chart : require('chart.js'));
+      typeof Chart !== 'undefined' ? Chart : require('chart-lb.js'));
   }  else if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
     define(['angular', 'chart'], factory);
@@ -50,7 +50,7 @@
 
   if (useExcanvas) Chart.defaults.global.animation = false;
 
-  return angular.module('chart.js', [])
+  return angular.module('chart-lb.js', [])
     .provider('ChartJs', ChartJsProvider)
     .factory('ChartJsFactory', ['ChartJs', '$timeout', ChartJsFactory])
     .directive('chartBase', ['ChartJsFactory', function (ChartJsFactory) { return new ChartJsFactory(); }])
